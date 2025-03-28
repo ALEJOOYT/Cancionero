@@ -23,7 +23,7 @@ export default function App() {
 
     const fetchCanciones = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/canciones');
+        const response = await fetch('http://cancionero-production.up.railway.app/api/canciones');
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
